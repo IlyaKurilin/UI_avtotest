@@ -24,4 +24,5 @@ def test_rename(run):
     page.pw.locator(ProfilePage.BUTTON_SAVE).click()
     page.pw.reload()
     expect(page.pw.locator(UserMenu().USER_BUTTON)).to_contain_text('Alex')
+    page.pw.screenshot(type='jpeg', path='/Users/Ikurilin/PycharmProjects/UI_avtotest/screen.jpeg')
 
